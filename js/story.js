@@ -7,11 +7,9 @@ const verb = prompt('Please provide a verb.');
 const noun = prompt('Please provide a noun.');
 
 // 2. Combine the input with other words to create a story.
-const story = `There ${adjective} once a big man who ${verb} to save and ${noun} cats.`
+const story = `<p>There once was a ${adjective} programmer who wanted to use Javascript to ${verb} the ${noun}.</p>`
 
 // 3. Display the story as a <p> inside the <main> element.
+document.querySelector('main').innerHTML = story; 
 
-console.log(adjective);
-console.log(verb);
-console.log(noun);
 console.log(story);
